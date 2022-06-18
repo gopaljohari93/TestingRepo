@@ -1,0 +1,17 @@
+touch .gitignore
+git config --global user.name Gopal
+git config --global user.email "gopaljohari1993@gmail.com"
+git init
+git add .
+git commit -"Initial Commit"
+git status 
+ssh-keygen -t ed25519 -C "gopaljohari1993@gmail.com"
+cat  /c/Users/Gopal/.ssh/id_ed25519.pub enter
+		copy generate ssh key
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMy8WuaW03verXUvnsHW8SEtOuX6wrDCjQ+iKcwnCMZi gopaljohari1993@gmail.com
+		Add this key on your GitHube account
+git remote add origin git@github.com:gopaljohari93/PortfolioWebsite.git
+git push origin master enter project githube par upload ho gaya hai
+
+
+

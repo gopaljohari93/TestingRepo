@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <nav id="navbar">
+            <img src="images/logo.png" alt="" class="logo">
+            <ul id="menu">
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Product</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </div>
+    <p class="text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus metus et diam accumsan convallis. Integer
+        pellentesque magna diam, at accumsan leo dignissim condimentum. Donec orci justo, maximus eu nibh ac, ultricies
+        blandit turpis. Nulla a felis non leo faucibus semper. Fusce convallis dictum nulla non commodo. Duis varius
+        congue facilisis. Nam blandit lectus eu volutpat condimentum. Maecenas viverra nisi ac nisi commodo sagittis.
+        Mauris dolor mi, ullamcorper sed odio sit amet, porta varius ante. Nullam porta augue ut massa imperdiet
+        dapibus. In scelerisque congue ligula, sed posuere nunc bibendum sed. Curabitur ultricies nisl ac felis euismod
+        tristique. Vivamus ac laoreet tortor.
+    </p>
+
+    <p class="text">
+        Duis suscipit tellus mi, sit amet sodales arcu pellentesque sed. Nulla facilisi. Integer eleifend pellentesque
+        odio, eu luctus quam pretium id. Proin sed leo in justo feugiat iaculis. Donec dignissim risus quis diam
+        porttitor vestibulum. Proin sodales dignissim lorem ut mattis. Sed eu ornare lorem. Duis imperdiet odio id
+        turpis rutrum, at facilisis felis interdum.
+    </p>
+
+    <p class="text">
+        Ut ac felis in nunc lacinia suscipit. Vestibulum vulputate lectus non aliquet pretium. Nullam ullamcorper
+        viverra arcu, nec dictum justo imperdiet vitae. Nunc faucibus, magna vehicula facilisis elementum, lorem lectus
+        feugiat nulla, ut tristique nisi elit vitae sapien. In ut fringilla ipsum. Quisque condimentum sagittis
+        molestie. Nam consequat mi vitae pulvinar convallis.
+    </p>
+
+    <p class="text">
+        Sed interdum massa et consequat cursus. Duis ac ornare lacus, a lobortis dui. Ut lobortis justo sit amet auctor
+        lacinia. Fusce pretium lacus maximus augue fringilla, id consectetur nisi bibendum. Donec pellentesque laoreet
+        nibh, ac vehicula mi posuere vehicula. Nunc risus velit, sagittis non odio non, porta iaculis libero.
+        Suspendisse aliquet, libero non rhoncus dictum, nisi massa auctor mi, pharetra pharetra magna est eget tortor.
+        Aliquam rutrum nunc ex, rutrum pellentesque turpis auctor et. Integer placerat ligula metus, id fringilla mi
+        rhoncus a. In et nibh lectus. Quisque non feugiat dui, vel bibendum urna. Suspendisse vel fermentum sem.
+    </p>
+
+    <p class="text">
+        Praesent imperdiet libero sit amet nunc rhoncus faucibus. Etiam consectetur ac nulla id porta. In iaculis
+        convallis arcu, ac venenatis metus vestibulum at. In condimentum, dui non faucibus porta, leo diam blandit est,
+        quis vestibulum leo erat eu urna. Ut vitae diam dictum, sodales enim vel, iaculis nulla. In eget bibendum massa.
+        Phasellus pretium sapien sit amet massa suscipit, non fermentum sem pharetra. Aenean vel vehicula libero, at
+        rutrum nunc. Praesent elementum ultrices nulla.
+    </p>
+
+
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+
+        window.onscroll = function(){
+            if(window.pageYOffset >= menu.offsetTop){
+                navbar.classList.add("sticky");
+            }
+            else{
+                navbar.classList.remove("sticky");
+            }
+        }
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

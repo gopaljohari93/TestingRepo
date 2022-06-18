@@ -1,0 +1,93 @@
+/* Step 2) Add CSS: */
+body{
+    margin: 0;
+}
+/* Slideshow container */
+.slide-container{
+    position: relative;
+    width: 100%;
+}
+.slide img{
+    width: 100%;   
+}
+
+/* Next & previous buttons */
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    font-size: 25px;
+    top: 45%;
+    color: black;
+    background-color: rgba(255,255,255,0.712);
+    font-weight: bold;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+/* Position the "next button" to the right */
+.next{
+    right: 10px;
+}
+
+/* Position the "prev button" to the left */
+.prev{
+    left: 10px;
+}
+
+/* Caption text */
+.caption{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 0px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px 0px;
+}
+.slide{
+    display: none;
+}
+/* The dots/bullets/indicators */
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 2px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+/* The dots/bullets/indicators hover*/
+.dot:hover{
+    background-color: #717171;
+    font-size: 30px;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover{
+    background-color: #ffffff;
+}
+
+/* Number text (1/3 etc) */
+.number-text{
+    position: absolute;
+    top: 0;
+    color: #f2f2f2;
+    font-size: 46
+    px;
+    padding: 8px 12px;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 375px){
+    .arrow, .caption{
+        font-size: 16px;
+    }
+}

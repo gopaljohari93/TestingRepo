@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="brand">Website</a>
+        <div class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Work</a>
+            <a href="#">Project</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
+        </div>
+    </header>
+    <section class="section-main">
+        <h1>Website Navigation Bar</h1>
+    </section>
+
+    <section class="section-two">
+        <h2>Project Work</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis inventore tempora cum beatae dignissimos est, repellat voluptatese.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis inventore tempora cum beatae dignissimos est, repellat voluptatese.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis inventore tempora cum beatae dignissimos est, repellat voluptatese.</p>
+        <h2>Project Website</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis inventore tempora cum beatae dignissimos est, repellat voluptatese.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis inventore tempora cum beatae dignissimos est, repellat voluptatese.</p>
+    </section>
+
+
+    <!-- Javascript Navigation bar -->
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle('sticky',scrollY > 0);
+        });
+
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu-btn');
+        var closeBtn = document.querySelector('.close-btn');
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.add('active');
+        });
+
+
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove('active');
+        });
+    </script>
+
+
+
+
+
+
+
+
+</body>
+</html>

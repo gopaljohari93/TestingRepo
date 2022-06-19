@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a2a2a;
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+}
+.menu ul li a{
+    font-size: 28px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s all;
+}
+.menu ul li a:hover{
+    color: yellow;
+}
+/* create navbar bottom css style */
+.hover-line::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: yellow;
+    transition:width .3s;
+}
+.hover-line:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
